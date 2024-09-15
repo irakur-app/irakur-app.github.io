@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+:root {
+	--nav-height: 10vh;
+	--light-color: #fafffe;
+	--button-color: #99afaa;
+	--gradient-light-color: #aaddcc;
+	--gradient-dark-color: #99ccbb;
+}
+
+body {
+	margin: 0;
+	background-color: var(--light-color);
+	font-family: 'Montserrat', sans-serif;
+}
+
+#nav {
+	height: var(--nav-height);
+	background: var(--gradient-light-color);
+	background: linear-gradient(
+			90deg,
+			var(--gradient-dark-color) 0%,
+			var(--gradient-light-color) 50%,
+			var(--gradient-dark-color) 100%
+		);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 12%;
+}
+
+#nav > #nav-logo {
+	margin-left: 16px;
+}
+#nav > #nav-title {
+	margin-left: 16px;
+	width: 100%;
+	font-size: 35pt;
+	color: #ffffff;
+}
+
+#nav > #nav-links {
+	display: flex;
+	width: 15%;
+	height: 100%;
+	vertical-align: middle;
+	justify-content: right;
+	font-size: 18pt;
+}
+
+#nav > #nav-links > a {
+	text-decoration: none;
+	color: #ffffff;
+	padding: 0 32px;
+	height: 100%;
+	line-height: var(--nav-height);
+}
+
+#introduction {
+	text-align: center;
+	padding: 5% 12% 0;
+	background: linear-gradient(
+			90deg,
+			#f0ffff44 0%,
+			#fffffff5 33%,
+			#fffffff5 67%,
+			#f0ffff44 100%
+		), url("images/background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80vw;
+	height: 75vh;
+	font-size: larger;
+}
+
+#introduction > h2 {
+	margin-top: 0;
+}
+
+#introduction > #introduction-link {
+	background-color: var(--button-color);
+	padding: 12px 24px;
+	border-radius: 100vi;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+footer > #footer-copyright {
+	font-size: 10pt;
+}
+
+footer > #footer-source {
+	font-size: 8pt;
+}
